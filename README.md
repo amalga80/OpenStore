@@ -1,4 +1,4 @@
-# K-Shop
+# OpenStore
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
 
@@ -8,10 +8,6 @@ Kindly follow these steps
 ## Node Modules 
 
 npm i
-
-## Backend Server 
-
-npm run server 
 
 ## Development server
 
