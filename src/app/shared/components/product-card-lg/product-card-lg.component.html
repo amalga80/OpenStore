@@ -1,0 +1,49 @@
+<!-- <div class="product-card-lg">
+  <button class="btn btn-compare">
+    <i class="fa fa-compress" aria-hidden="true"></i>
+  </button>
+  <div *ngIf="product.tag; then tag"></div>
+  <ng-template #tag>
+    <p [ngClass]="{ 'product-tag-blue': product.tag.title == 'new', 'product-tag-green': product.tag.title == 'sale'}" >{{product.tag.label}}</p>
+  </ng-template>
+
+  <div class="product-card-lg_image">
+    <img src="{{product.img}}"/>
+  </div>
+  <div class="product-card-lg_info">
+    <p class="product-card-lg_product-title">{{product.title}}</p>
+    <div class="product-card-lg_discount" *ngIf="product.sale;else normalPrice">
+      <p class="product-card-lg_discount-old">{{product.price}}</p>
+      <p class="product-card-lg_discount-new">{{product.sale.price}}</p>
+    </div>
+    <ng-template #normalPrice>
+      <p class="product-card-price">{{product.price}}</p>
+    </ng-template>
+    <ngb-rating [rate]="product.rate"></ngb-rating>
+    <div class="product-card-cta d-flex">
+      <button role="button" class="btn">
+        <i class="fa fa-shopping-cart"></i>
+      </button>
+      <button role="button" class="btn">
+        <i class="fa fa-heart-o"></i>
+      </button>
+      <button role="button" class="btn">
+        <i class="fa fa-share-alt"></i>
+      </button>
+    </div>
+  </div>
+</div> -->
+
+
+<div class="product-card-lg">
+  <button class="btn btn-sync" (click)="syncProduct(product.id)">
+    Sync
+  </button>
+  <div class="product-card__image">
+    <img src="{{product.imageUrl}}" alt="{{product.name}}"/>
+  </div>
+  <div class="product-card__info">
+    <p class="product-card__product-title">{{product.name}}</p>
+    <p class="product-card__price">${{product.price | number}}</p>
+  </div>
+</div>

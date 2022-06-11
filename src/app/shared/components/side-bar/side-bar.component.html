@@ -1,0 +1,11 @@
+<div class="sidenav">
+    <h5>Products</h5>
+    <a routerLink="/home" routerLinkActive="active"
+    >All ({{productsCount}})</a>
+    <a *ngFor="let type of productTypes"
+        routerLinkActive="active"
+        [routerLink]="['/home', type.category]">
+        {{ type.category }} Tools ({{type.count}})
+    </a>
+</div>
+  

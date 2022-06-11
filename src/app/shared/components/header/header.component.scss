@@ -1,0 +1,12 @@
+@import '../../../../assets/SCSS/partials/variables';
+
+.navbar {
+  background-image: linear-gradient(to right, #1257A5, #1DA6B8);
+}
+
+.navbar-nav_brand {
+  a {
+    color: $white;
+  }
+}
+

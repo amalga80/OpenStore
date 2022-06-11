@@ -1,0 +1,25 @@
+@import '../../../assets/SCSS/partials/variables';
+
+.product-card-lg-container {
+  margin-bottom: 30px;
+}
+
+.recent-products-header-title {
+  font-size: 16px;
+  color: $textBlack;
+  margin-top: 20px;
+}
+.main-products-header-title {
+  font-size: 18px;
+  color: $textBlack;
+  margin-top: 20px;
+}
+
+.sync-btn {
+  width: 100px;
+  margin-top: 20px;
+  background: #FFC400;
+  color: white;
+  border: 0;
+  font-size: 10pt;
+}

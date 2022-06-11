@@ -1,0 +1,19 @@
+<div class="container">
+  <div div class="row">
+    <div class="col-12 col-md-12 col-lg-12 d-flex justify-content-between">
+      <div>
+        <h1 class="recent-products-header-title">Products</h1>
+      </div>
+      <div>
+        <button class="main-products-header-title sync-btn" (click)="syncProducts()">Sync</button>
+      </div>
+    </div>
+    <div class="col-12 col-md-12 col-lg-12 mt-3">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 product-card-lg-container" *ngFor="let product of products">
+          <app-product-card-lg [product]="product" (updateProduct)="updateProduct($event)"></app-product-card-lg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+@import './variables';
+
+@import "bootstrap";
+
+h1 {
+  font-size: 24pt;
+}
+
+h2, h2, h3, h4 {
+  font-size: 18pt;
+}
+
+h5 {
+  font-size: 16pt;
+}
+
+body, p, a, span, li {
+  font-size: 14pt;
+}
+
+body {
+  background: $grayBG ;
+}
+
+.btn-primary_custom {
+  background-color: $btnBG;
+  color: $primary;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
